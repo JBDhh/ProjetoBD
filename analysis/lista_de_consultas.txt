@@ -1,0 +1,13 @@
+Exemplos de Consultas SQL para treinarmos para o dia da apresentação:
+
+
+1- Qual a média salarial masculina/feminina por ano?
+2- Quantos funcionários da adm indireta tem na prefeitura no ano de 2020?
+3- qual(is) são os funcionários com maior vencimento?
+4- Qual Secretaria/órgão possui a maior média salarial por ano?
+5- Qual a média salarial por grau de instrução por ano?
+6- quantos servidores que estavam ativos em 2019 foram Desligados/Exonerado em 2020?
+7- Qual o servidor que tem ou teve, maior tempo trabalhando?
+8- Quantos Celetistas existem, que recebem mais que um salario mínimo (considere 1500)?
+9- Se temos vencimento do cargo e a jornada mensal, crie uma coluna que retorne o valor da hora trabalhada no mês.
+10- Existe algum funcionário que poderia ser parente da família Campos? retorne todos os servidores com nome ou sobrenome campos.
