@@ -13,3 +13,6 @@ venv/
 data/
 data_old/
 *.csv
+
+.env
+.idea
