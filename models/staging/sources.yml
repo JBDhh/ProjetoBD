@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: dados_brutos
+    schema: staging
+    tables:
+      - name: raw_servidores_2019
+      - name: raw_servidores_2020
+      - name: raw_servidores_2021
