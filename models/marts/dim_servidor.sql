@@ -9,6 +9,7 @@ WITH servidores_unicos AS (
         MAX(genero) as genero,
         MAX(grau_instrucao) as grau_instrucao,
         MIN(data_admissao) as data_admissao,
+        MAX(data_aposentadoria) as data_aposentadoria,
 
         CASE
             WHEN COUNT(*) > COUNT(data_desligamento) THEN NULL -- Recontratação

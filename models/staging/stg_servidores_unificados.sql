@@ -12,13 +12,14 @@ SELECT
 
     UPPER(TRIM(nsalsenome)) AS nome,
     COALESCE(esalsegenero, 'NI') AS genero,
-    COALESCE(esalseinstrucao, 'NAO INFORMADO') AS grau_instrucao,
+    COALESCE(esalseinstrucao, 'NI') AS grau_instrucao,
 
     COALESCE(NULLIF(dslderadmissao, '')::DATE, '1900-01-01'::DATE) AS data_admissao,
     NULLIF(dslserdesligamento, '')::DATE AS data_desligamento,
+    NULLIF(dsalseaposentadoria, '')::DATE AS data_aposentadoria,
 
     UPPER(TRIM(eslserlotacao)) AS lotacao_nome,
-    COALESCE(NULLIF(UPPER(TRIM(esalseunidade)), ''), 'NAO INFORMADO') AS unidade_nome,
+    COALESCE(NULLIF(UPPER(TRIM(esalseunidade)), ''), 'NI') AS unidade_nome,
     UPPER(TRIM(nsalseempr)) AS entidade_nome,
     esalseadministracao AS tipo_administracao,
 
@@ -28,6 +29,7 @@ SELECT
     UPPER(TRIM(eselsesituacao)) AS situacao_nome,
 
     COALESCE(NULLIF(aslserjornadamensal, '')::DECIMAL, 0) AS jornada_mensal,
+{#    NULLIF(tslserulat, '')::TIMESTAMP AS data_atualizacao_sistema,#}
 
     NULLIF(asalseanoo, '')::INTEGER AS ano_folha,
     NULLIF(asalsemess, '')::INTEGER AS mes_folha,
@@ -39,10 +41,12 @@ SELECT
     COALESCE(NULLIF(vsalseoutr, '')::DECIMAL, 0) AS valor_outras_remuneracoes,
     COALESCE(NULLIF(vsalseferi, '')::DECIMAL, 0) AS valor_ferias,
     COALESCE(NULLIF(vsalsenatl, '')::DECIMAL, 0) AS valor_13_salario,
+    COALESCE(NULLIF(vsalsedife, '')::DECIMAL, 0) AS valor_diferenca_salarial,
 
     COALESCE(NULLIF(vsalsedrrf, '')::DECIMAL, 0) AS valor_irrf,
     COALESCE(NULLIF(vsalsedprv, '')::DECIMAL, 0) AS valor_previdencia,
     COALESCE(NULLIF(vsalsedtot, '')::DECIMAL, 0) AS valor_descontos_total,
+    COALESCE(NULLIF(vsalsedrst, '')::DECIMAL, 0) AS valor_desconto_faltas,
     COALESCE(NULLIF(vsalsedxcd, '')::DECIMAL, 0) AS valor_descontos_diversos,
 
     COALESCE(NULLIF(vsalseliqd, '')::DECIMAL, 0) AS valor_liquido

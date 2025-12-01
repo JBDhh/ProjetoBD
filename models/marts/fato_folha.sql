@@ -14,8 +14,11 @@ SELECT
     stg.valor_13_salario,
     stg.valor_irrf,
     stg.valor_previdencia,
+    stg.valor_desconto_faltas,
+    stg.valor_diferenca_salarial,
     stg.valor_descontos_total,
     stg.valor_liquido,
+{#    stg.data_atualizacao_sistema,#}
 
     CASE
         WHEN stg.data_admissao = '1900-01-01' THEN 'DATA_NULA'
