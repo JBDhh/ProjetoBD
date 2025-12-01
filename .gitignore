@@ -16,3 +16,6 @@ data_old/
 
 .env
 .idea
+.user.yml
+/target
+/logs
