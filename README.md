@@ -1,4 +1,4 @@
-# 💉 Pipeline de Dados: Análise Exploratória de Dados dos Servidores da Prefeitura da Cidade do Recife
+# 🧑‍💼 Pipeline de Dados: Análise Exploratória de Dados dos Servidores da Prefeitura da Cidade do Recife
 
 **Projeto de Banco de Dados (2025.2) - CIn/UFPE**
 
